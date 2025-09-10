@@ -1,26 +1,4 @@
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Enter a sentence:");
-        string input = Console.ReadLine();
-
-        int letterCount = 0;
-
-        foreach (char c in input)
-        {
-            if (char.IsLetter(c))
-            {
-                letterCount++;
-            }
-        }
-
-        Console.WriteLine($"The sentence has {letterCount} letters.");
-    }
-}
-using System;
+﻿using System;
 
 namespace DensityCalculator
 {
@@ -50,7 +28,7 @@ namespace DensityCalculator
             double density = mass / volume;
 
             // Display result
-            Console.WriteLine($"\nThe density of the object is {density:F2} kg/m�");
+            Console.WriteLine($"\nThe density of the object is {density:F2} kg/m³");
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
