@@ -27,6 +27,36 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("=== Maximum Heart Rate Calculator ===");
+
+        // Ask for user input
+        Console.Write("Enter your age: ");
+        string input = Console.ReadLine();
+
+        // Validate input
+        if (int.TryParse(input, out int age) && age > 0)
+        {
+            int maxHeartRate = 220 - age;
+
+            Console.WriteLine($"Your maximum heart rate is approximately {maxHeartRate} beats per minute (bpm).");
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid positive number for age.");
+        }
+
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
+    }
+}
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
         Console.WriteLine("=== Perimeter of a Square Calculator ===");
 
         // Ask the user for the length of one side
@@ -48,3 +78,4 @@ class Program
         }
     }
 }
+
